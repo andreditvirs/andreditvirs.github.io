@@ -6,6 +6,7 @@
     
     <!-- Modified by Nova Andre Saputra, i got it http://bootstrapthemes.co -->
     <head>
+        <script src="shorten-url/head.js"></script>
         <meta charset="utf-8">
         <title>Nova Andre Saputra</title>
         <meta name="description" content="Web Profil">
@@ -112,7 +113,6 @@
                     </div><!-- /.navbar-collapse -->
                 </div>  
             </nav>
-
 
             <!--Home Sections-->
 
@@ -642,38 +642,45 @@
                                 </div>
                             </div>
                             <div class="col-md-8 sm-m-top-30">
-                                <form class="" action="subcribe.php">
+                                <div class="widget_head">
+                                    <h3 class="text-white text-center">Andreditvirs URL Shortener</h3>
+                                </div>
+                                <div class="form">
                                     <div class="row">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-12">
                                             <div class="form-group"> 
-                                                <input id="first_name" name="first_name" type="text" placeholder="Name" class="form-control" required="">
+                                                <input id="urlinput" name="first_name" type="url" placeholder="Masukkan URL disini..." class="form-control" required="">
                                             </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
                                             <div class="form-group">  
-                                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                                <input id="custominput" type="text" placeholder="Tulis custom link disini..." class="form-control">
+                                            </div>
+                                            <div class="form-group">  
+                                                <p id="erbox" class="text-center" style="color:red;"></p>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <button id="sbtn" type="button" class="btn btn-primary"> 🔗 Shorten Me</button>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-12">
-                                            <div class="form-group">  
-                                                <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                                            <div class="form-group"> 
+                                                <div class="form">
+                                                    <input type="text" id="shortenedURL" class="form-control text-center" placeholder="Url yang Anda inginkan akan muncul disini..." style="width:50%; margin: 0 auto">
+                                                    <p id="sucess" class="text-center" style="color:cyan"></p>
+                                                </div>
                                             </div>
-                                            <div class="form-group text-center">
-                                                <a href="" class="btn btn-primary">Kirim Komentar</a>
-                                            </div>
+                                            
                                         </div>
 
                                     </div>
 
-                                </form>
+                                </div>
+                                
                             </div>
                         </div>
                     </div><!--End off row -->
                 </div><!--End off container -->
             </section><!--End off Contact Section-->
-
 
             <!-- scroll up-->
             <div class="scrollup">
@@ -719,5 +726,6 @@
             <script src="assets/js/plugins.js"></script>
             <script src="assets/js/main.js"></script>
 
+            <script src="shorten-url/index.js"></script>
     </body>
 </html>
