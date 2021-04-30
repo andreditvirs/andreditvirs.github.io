@@ -40,6 +40,10 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="../assets/js/GitHubPinner.js"></script>
+        <!-- <div data="https://github.com/andreditvirs?tab=repositories" class="github-pinner" style="visibility: hidden;"></div> -->
     </head>
 
     <body data-spy="scroll" data-target=".navbar-collapse">
@@ -124,12 +128,10 @@
                             <div class="home_text">
                                 <h1 class="text-white">Profil <br /> Nova Andre Saputra</h1>
                             </div>
-
                             <div class="home_btns m-top-40">
                                 <a href="./blog/index.html" class="btn btn-primary m-top-20">Blog Saya</a>
                                 <a href="https://github.com/andreditvirs" class="btn btn-default m-top-20">Tautan Project</a>
                             </div>
-
                         </div>
                     </div><!--End off row-->
                 </div><!--End off container -->
@@ -177,7 +179,7 @@
                                                 <p>D3 Teknik Informatika Politeknik Elektronika
                                                     Negeri Surabaya - Angkatan tahun 2018
                                                 </p>
-
+                                                
                                             </div>
                                         </div> <!-- End off accordion item-1 -->
 
@@ -338,51 +340,21 @@
                             <div class="col-md-12">
                                 <div class="about_bottom_item">
                                     <div class="main_service roomy-40">
-                                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                                            <div class="ab_head">
-                                                <div class="ab_head_icon">
-                                                    <i class="icofont icofont-fire-burn"></i>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col" style="display: flex; justify-content: center;">
+                                                    <div data="https://github.com/andreditvirs" class="github-pinner flat " style="visibility: hidden;"></div>
                                                 </div>
-                                            </div>
-                                            <div class="head_title text-center">
-                                                <h6 class="m-bottom-20">SEMANGAT BERKREASI</h6>
-                                                <p>Tetap semangat, pantang menyerah, selalu
-                                                    hadapi permasalahan merupakan suatu motto yang saya terapkan
-                                                    di keseharian. Semakin banyak permasalahan yang dihadapi, menurut saya
-                                                    itu adalah lompatan level pengalaman yang kian jauh 
-                                                </p>
-                                            </div>
+                                                <div class="col" style="display: flex; justify-content: center; margin-top: 10px">
+                                                    <div style="float: left; margin: 5px 5px;" data="https://github.com/andreditvirs/pinjam_ruang-laravel-magang" class="github-pinner flat" style="visibility: hidden;"></div>
+                                                    <div style="float: left; margin: 5px 5px;" data="https://github.com/andreditvirs/movieapp-vue_js-web" class="github-pinner flat" style="visibility: hidden;"></div>
+                                                    <div style="float: left; margin: 5px 5px;" data="https://github.com/andreditvirs/moviedb-react_js-web/" class="github-pinner flat" style="visibility: hidden;"></div>
+                                                    <div style="float: left; margin: 5px 5px;" data="https://github.com/andreditvirs/apk-buku-tetangga" class="github-pinner flat" style="visibility: hidden;"></div>
+                                                </div>
+                                            </div><!-- End off row -->
                                         </div>
-                        
-                                        <div class="col-md-4 col-md-offset-2">
-                                                        <div class="service_item text-right">
-                                                            <i class="icofont icofont-imac"></i>
-                                                            <h6 class="m-top-30">PROGRAMMING</h6>
-                                                            <div class="separator_small" style="margin-left: 90%;"></div>
-                                                            <p>Programming atau memrogram merupakan salah satu rutinitas
-                                                                yang saya jalani saat ini. Dimana saya senang untuk
-                                                                membuat suatu produk yang bermanfaat bagi diri sendiri
-                                                                maupun orang lain. Dengan ilmu yang saya dapatkan Tentang
-                                                                pemrograman, saya lebih mendefinisikan masalah sehari - 
-                                                                hari dengan membuat peseudo terlebih dahulu.
-                                                            </p>
-                                                        </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                                        <div class="service_item">
-                                                            <i class="icofont icofont-video"></i>
-                                                            <h6 class="m-top-30">EDITOR</h6>
-                                                            <div class="separator_small"></div>
-                                                            <p>Akibat dulu saat SMP, suka dengan sesuatu
-                                                                yang berbau teknis editting video. Saya
-                                                                terjun di bidang perfilman khususnya menjadi Editor
-                                                                atau lebih ke teknis daripada produksi suatu film/video.
-                                                                Dengan mengumpulkan keberanian, saya dan tim maju untuk
-                                                                mengikuti beberapa lomba film/video/shortmovie yang
-                                                                bertingkat nasional/kabupaten.
-                                                            </p>
-                                                        </div>
-                                        </div><!--End off row -->
+                                        
+                                        <!--End off row -->
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +379,6 @@
                                     </p>
                                 </div>
                             </div>
-
                             <div class="portfolio_content">
                                 <div class="col-md-8">
                                     <div class="row">
@@ -563,46 +534,6 @@
                 </div><!--End off container -->
             </section><!-- End off Blog section-->
 
-            <!--client brand section-->
-            <section id="cbrand" class="cbrand">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_cbrand text-center roomy-100">
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="cbrand_item m-bottom-10">
-                                    <a target="_blank" href="https://www.office.com"><img src="assets/images/clients/msoffice.png" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="cbrand_item m-bottom-10">
-                                    <a target="_blank" href="https://www.adobe.com"><img src="assets/images/clients/adobecc.png" alt="" /></a> 
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="cbrand_item m-bottom-10">
-                                    <a target="_blank" href="https://www.laravel.com"><img src="assets/images/clients/laravel.png" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="cbrand_item m-bottom-10">
-                                    <a target="_blank" href="https://www.developer.android.com"><img src="assets/images/clients/android_studio.png" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="cbrand_item m-bottom-10">
-                                    <a target="_blank" href="https://www.filmora.wondershare.com"><img src="assets/images/clients/filmora.png" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="cbrand_item m-bottom-10">
-                                    <a target="_blank" href="https://www.coreldraw.com"><img class="" src="assets/images/clients/coreldraw.png" alt="" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End off row -->
-                </div><!-- End off container -->
-            </section><!-- End off Cbrand section -->
-
             <!--Video section-->
             <section id="video" class="video">
                 <div class="overlay"></div>
@@ -711,8 +642,7 @@
 
             <!-- JS includes -->
 
-            <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-            <script src="assets/js/vendor/bootstrap.min.js"></script>
+            
 
             <script src="assets/js/jquery.magnific-popup.js"></script>
             <script src="assets/js/jquery.easing.1.3.js"></script>
