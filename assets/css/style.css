@@ -367,6 +367,13 @@ Separator
     margin:20px 0px;
     background: #4677C4;
 }
+.separator_right{
+    width:30px;
+    height:2px;
+    margin:20px 0px;
+    float: right;
+    background: #4677C4;
+}
 .separator_auto{
     width:85px;
     height:2px;

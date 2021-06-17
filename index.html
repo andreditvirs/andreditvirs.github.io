@@ -44,6 +44,7 @@
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="../assets/js/GitHubPinner.js"></script>
         <!-- <div data="https://github.com/andreditvirs?tab=repositories" class="github-pinner" style="visibility: hidden;"></div> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     </head>
 
     <body data-spy="scroll" data-target=".navbar-collapse">
@@ -554,7 +555,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="main_contact roomy-100 text-white">
-                            <div class="col-md-4">
+                            <div class="col-md-4" style="margin: 20px 0px;">
                                 <div class="rage_widget">
                                     <div class="widget_head">
                                         <h3 class="text-white">AndreDitVirs</h3>
@@ -577,42 +578,92 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-8 sm-m-top-30">
+                            <div class="col-md-8 sm-m-top-30" style="margin: 20px 0px;">
                                 <div class="widget_head">
-                                    <h3 class="text-white text-center">Andreditvirs URL Shortener</h3>
+                                    <h3 class="text-white">Sertifikasi</h3>
+                                    <div class="separator_small"></div>
                                 </div>
-                                <div class="form">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group"> 
-                                                <input id="urlinput" name="first_name" type="url" placeholder="Masukkan URL disini..." class="form-control" required="">
-                                            </div>
-                                            <div class="form-group">  
-                                                <input id="custominput" type="text" placeholder="Tulis custom link disini..." class="form-control">
-                                            </div>
-                                            <div class="form-group">  
-                                                <p id="erbox" class="text-center" style="color:red;"></p>
-                                            </div>
-                                            <div class="form-group text-center">
-                                                <button id="sbtn" type="button" class="btn btn-primary"> 🔗 Shorten Me</button>
-                                            </div>
+                                <div class="row">
+                                    <div class="splide" id="splide-certificate">
+                                        <div class="splide__track">
+                                            <ul class="splide__list row">
+                                                <li class="splide__slide col-md-6">
+                                                    <div style="margin: 10px 0px; padding: 20px 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; height: 140px;">
+                                                        <img src="assets/images/certificates/logo/dicoding.png" alt="Avatar" style="margin: 2px 18px; height:20px">
+                                                        <div class="container">
+                                                            <h4><b>Dicoding</b></h4>
+                                                            <p style="color: black;">Memulai Pemrograman <br> Dengan Dart</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide col-md-6">
+                                                    <div style="margin: 10px 0px; padding: 20px 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; height: 140px;">
+                                                        <img src="assets/images/certificates/logo/dicoding.png" alt="Avatar" style="margin: 2px 18px; height:20px">
+                                                        <div class="container">
+                                                            <h4><b>Dicoding</b></h4>
+                                                            <p style="color: black;">Belajar Dasar Pemrograman <br> JavaScript</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide col-md-6">
+                                                    <div style="margin: 10px 0px; padding: 20px 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; height: 140px;">
+                                                        <img src="assets/images/certificates/logo/dicoding.png" alt="Avatar" style="margin: 2px 18px; height:20px">
+                                                        <div class="container">
+                                                            <h4><b>Dicoding</b></h4>
+                                                            <p style="color: black;">Belajar Membuat Aplikasi <br> Back-End untuk Pemula</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide col-md-6">
+                                                    <div style="margin: 10px 0px; padding: 20px 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; height: 140px;">
+                                                        <img src="assets/images/certificates/logo/dicoding.png" alt="Avatar" style="margin: 2px 18px; height:20px">
+                                                        <div class="container">
+                                                            <h4><b>Dicoding</b></h4>
+                                                            <p style="color: black;">Cloud Practitioner Essentials <br> (Belajar Dasar AWS Cloud)</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide col-md-6">
+                                                    <div style="margin: 10px 0px; padding: 20px 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; height: 140px;">
+                                                        <img src="assets/images/certificates/logo/progate.png" alt="Avatar" style="margin: 2px 18px; height:20px">
+                                                        <div class="container">
+                                                            <h4><b>Progate</b></h4>
+                                                            <p style="color: black;">Path Pengembangan Web <br> (Node.js)</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide col-md-6">
+                                                    <div style="margin: 10px 0px; padding: 20px 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; height: 140px;">
+                                                        <img src="assets/images/certificates/logo/dicoding.png" alt="Avatar" style="margin: 2px 18px; height:20px">
+                                                        <div class="container">
+                                                            <h4><b>Dicoding</b></h4>
+                                                            <p style="color: black;">Belajar Membuat Aplikasi <br> Back-End untuk Pemula</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide col-md-6">
+                                                    <div style="margin: 10px 0px; padding: 20px 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; height: 140px;">
+                                                        <img src="assets/images/certificates/logo/dicoding.png" alt="Avatar" style="margin: 2px 18px; height:20px">
+                                                        <div class="container">
+                                                            <h4><b>Dicoding</b></h4>
+                                                            <p style="color: black;">Belajar Membuat Aplikasi <br> Back-End untuk Pemula</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide col-md-6">
+                                                    <div style="margin: 10px 0px; padding: 20px 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; height: 140px;">
+                                                        <img src="assets/images/certificates/logo/dicoding.png" alt="Avatar" style="margin: 2px 18px; height:20px">
+                                                        <div class="container">
+                                                            <h4><b>Dicoding</b></h4>
+                                                            <p style="color: black;">Belajar Membuat Aplikasi <br> Back-End untuk Pemula</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-
-                                        <div class="col-sm-12">
-                                            <div class="form-group"> 
-                                                <div class="form">
-                                                    <input type="text" id="shortenedURL" class="form-control text-center" placeholder="Url yang Anda inginkan akan muncul disini..." style="width:50%; margin: 0 auto">
-                                                    <p id="sucess" class="text-center" style="color:cyan"></p>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-
                                     </div>
-
                                 </div>
-                                
-                            </div> -->
+                            </div>
                         </div>
                     </div><!--End off row -->
                 </div><!--End off container -->
@@ -646,9 +697,6 @@
         </div>
 
             <!-- JS includes -->
-
-            
-
             <script src="assets/js/jquery.magnific-popup.js"></script>
             <script src="assets/js/jquery.easing.1.3.js"></script>
             <script src="assets/js/slick.min.js"></script>
@@ -662,5 +710,38 @@
             <script src="assets/js/main.js"></script>
 
             <script src="shorten-url/index2.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+            <script>                 
+                    if (navigator.userAgent.match(/Mobile/)) {
+                        new Splide( '#splide-certificate', {
+                            type    : 'loop',
+                            perPage : 1,
+                            autoplay: true,
+                        } ).mount();
+                    }else{
+                        new Splide( '#splide-certificate', {
+                            type    : 'loop',
+                            perPage : 3,
+                            autoplay: true,
+                        } ).mount();
+                    }
+
+                    // When browser resized
+                    $(window).resize(function() {
+                        if (navigator.userAgent.match(/Mobile/)) {
+                            new Splide( '#splide-certificate', {
+                                type    : 'loop',
+                                perPage : 1,
+                                autoplay: true,
+                            } ).mount();
+                        }else{
+                            new Splide( '#splide-certificate', {
+                                type    : 'loop',
+                                perPage : 3,
+                                autoplay: true,
+                            } ).mount();
+                        }
+                    });
+            </script>
     </body>
 </html>
