@@ -1031,7 +1031,7 @@ Nav Menu style
 Home Section style
 ==================*/
 .home{
-    background: url(../images/background/page.jpg) no-repeat bottom center;
+    background: url(../images/background/page.jpeg) no-repeat bottom center;
     background-size: cover;
     position: relative;
 }
