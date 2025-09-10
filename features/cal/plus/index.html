@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <p id="cal"></p>
+    </head>
+    <body>
+        <script>
+            let input = prompt('Masukkan sepanjang string penjumlahan (ex: "2021+20+21+20212021") = ');
+            let splits = input.split("+");
+            let sum = 0;
+            for (let index = 0; index < splits.length; index++) {
+                sum += parseInt(splits[index]);
+                if(index == 0){
+                    document.getElementById("cal").innerHTML = ("Perhitungan = " + splits[index]);
+                }else{
+                    document.getElementById("cal").innerHTML += (" + " + splits[index]);
+                }
+            }
+            alert(sum);
+            document.getElementById("cal").innerHTML += (" = " + sum);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="18"><page Index="1"><![CDATA[Integrate Your PHP Code With
+
+
+
+
+                                         Telegram Bot API For Beginner
+
+
+
+
+
+
+
+
+                                         FITUR]]></page><page Index="2"><![CDATA[APA ITU BOT?
+
+
+
+
+
+
+
+
+
+
+
+                             Bot Internet, robot web, robot, atau sekadar bot, adalah aplikasi perangkat lunak
+
+                           yang menjalankan tugas otomatis melalui Internet. Biasanya, bot melakukan tugas
+
+
+                                yang sederhana dan berulang jauh lebih cepat daripada yang bisa dilakukan
+
+
+                                                                                          seseorang.
+
+
+
+
+
+
+
+
+                                                                                             ~Wikipedia~]]></page><page Index="3"><![CDATA[MENGAPA TELEGRAM
+
+
+
+
+
+
+
+
+
+
+
+                         1. Mempunyai layanan penyimpanan Cloud
+
+                         2. Bisa memilih mengirim file asli atau dikompres
+
+
+                         3. Kapasitas anggota grup bisa diperbesar sampai 5.000 orang!
+
+
+                         4. Punya fitur Secret Chat
+
+
+                         5. Bisa memasukkan beberapa nomor telepon sekaligus
+
+
+                         6. Bisa mengunggah beberapa foto profil sekaligus
+
+                         7. Ada fitur chat bot juga, lho!
+
+
+
+
+
+
+                                               https://www.idntimes.com/tech/trend/nena-zakiah-1/keunggulan-telegram-dibandingkan-whatsapp/4]]></page><page Index="4"><![CDATA[FITUR
+
+
+
+
+
+
+
+
+
+
+                         •   Mendapatkan identitas bot
+
+
+                         •   Kirim Pesan Biasa
+
+                         •   Kirim Pesan Format HTML
+
+
+                         •   Forward Pesan
+
+                         •   Copy Pesan
+
+                         •   Kirim Foto
+
+
+                         •   Kirim Audio
+
+                         •   Pesan Ber-opsi
+
+
+                         •   Mengirim & Menerima Lokasi
+
+                         •   Menerima File ( <20MB)
+
+                         •   Webhook Ketika ada pesan baru (redirect message to API)
+
+
+                         Etc in https://core.telegram.org/bots/api]]></page><page Index="5"><![CDATA[FUNCTION CODE
+
+
+
+
+
+
+
+
+
+
+                         function send($url, $method, $param) {                                if ($err) {
+
+
+                            $req = $url.$method.$param;                                          echo 'Pesan gagal terkirim, error :' . $err;
+
+                            $ch = curl_init();                                                 }else{
+
+
+                            $optArray = array(                                                    echo 'Pesan terkirim';
+
+                                 CURLOPT_URL => $req,                                             echo var_dump($result);
+
+
+                                 CURLOPT_RETURNTRANSFER =>                                     }
+                         true
+                                                                                            }
+                            );
+
+                            curl_setopt_array($ch, $optArray);
+
+
+                            $result = curl_exec($ch);
+
+                            $err = curl_error($ch);
+
+
+                            curl_close($ch);]]></page><page Index="6"><![CDATA[MENDAPATKAN IDENTITAS BOT
+
+
+
+
+
+
+
+
+
+
+
+                         • Metode sederhana untuk menguji token autentikasi bot Anda. Tidak memerlukan
+
+                             parameter. Mengembalikan informasi dasar tentang bot dalam bentuk objek Pengguna.
+
+
+
+                         • Method = /getMe]]></page><page Index="7"><![CDATA[KIRIM PESAN BIASA
+
+
+
+
+
+
+
+
+
+
+
+                         • Gunakan metode ini untuk mengirim pesan teks. Jika berhasil, Pesan yang dikirim akan
+
+                             dikembalikan.                                                           array(2) {                                ["chat"]=>
+
+
+                                                                                                      ["ok"]=>                                   array(5) {
+                         • Method = /sendMessage                                                      bool(true)                                   ["id"]=>
+                                                                                                      ["result"]=>                                 int(956421412)
+                                                                                                      array(5) {                                   ["first_name"]=>
+                                                                                                       ["message_id"]=>                            string(18) "Nova Andre Saputra"
+                                                                                                       int(45)                                     ["last_name"]=>
+                                                                                                       ["from"]=>                                  string(24) "| andreditvirs.github.io"
+                                                                                                       array(4) {                                  ["username"]=>
+                                                                                                         ["id"]=>                                  string(12) "andreditvirs"
+                                                                                                         int(1859463581)                           ["type"]=>
+                                                                                                         ["is_bot"]=>                              string(7) "private"
+                                                                                                         bool(true)                              }
+                                                                                                         ["first_name"]=>                        ["date"]=>
+                                                                                                         string(12) "Telkom RAM V"               int(1628517877)
+                                                                                                         ["username"]=>                          ["text"]=>
+                                                                                                         string(12) "TelkomRAMBot"               string(11) "HELLO WORLD"
+                                                                                                       }                                        }
+                                                                                                                                               }]]></page><page Index="8"><![CDATA[KIRIM PESAN FORMAT HTML
+
+
+
+
+
+
+
+
+
+
+
+                         • Bot API mendukung pemformatan dasar untuk pesan. Anda dapat menggunakan teks tebal,
+
+                             miring, digarisbawahi, dan dicoret, serta tautan sebaris dan kode yang telah diformat
+
+
+                             sebelumnya dalam pesan bot Anda. KlienTelegram akan merendernya sesuai dengan itu.
+
+
+                             Anda dapat menggunakan format gaya penurunan harga atau gaya HTML.
+
+
+                         • Method = /sendMessage
+
+
+
+                         • Contoh : <b>bold</b>]]></page><page Index="9"><![CDATA[FORWARD PESAN
+
+
+
+
+
+
+
+
+
+
+
+                         • Gunakan metode ini untuk meneruskan pesan apa pun. Pesan layanan tidak dapat
+
+                             diteruskan. Jika berhasil, Pesan yang dikirim akan dikembalikan.
+
+
+
+                         • Method = /forwardMessage]]></page><page Index="10"><![CDATA[COPY PESAN
+
+
+
+
+
+
+
+
+
+
+
+                         • Gunakan metode ini untuk menyalin pesan apa pun. Pesan layanan dan pesan faktur tidak
+
+                             dapat disalin. Metode ini analog dengan metode forwardMessage, tetapi pesan yang disalin
+
+
+                             tidak memiliki tautan ke pesan asli. Mengembalikan MessageId dari pesan terkirim jika
+
+
+                             berhasil.
+
+
+                         • Method = /copyMessage]]></page><page Index="11"><![CDATA[KIRIM FOTO
+
+
+
+
+
+
+
+
+
+
+
+                         • Gunakan metode ini untuk mengirim foto. Jika berhasil, Pesan yang dikirim akan
+
+                             dikembalikan.
+
+
+
+                         • Method = /sendPhoto]]></page><page Index="12"><![CDATA[KIRIM AUDIO
+
+
+
+
+
+
+
+
+
+
+
+                         • Gunakan metode ini untuk mengirim file audio, jika Anda ingin klien Telegram
+
+                             menampilkannya di pemutar musik. Audio Anda harus dalam format .MP3 atau .M4A. Jika
+
+
+                             berhasil, Pesan yang dikirim akan dikembalikan. Bot saat ini dapat mengirim file audio
+
+
+                             berukuran hingga 50 MB, batas ini dapat diubah di masa mendatang.
+
+
+                         • Method = /sendAudio]]></page><page Index="13"><![CDATA[PESAN BER-OPSI
+
+
+
+
+
+
+
+
+
+
+
+                         • Opsi antarmuka tambahan. Objek serial JSON untuk keyboard sebaris, keyboard balasan
+
+                             kustom, instruksi untuk menghapus keyboard balasan atau untuk memaksa balasan dari
+
+
+                             pengguna.
+
+
+
+                         • Method = /sendMessage]]></page><page Index="14"><![CDATA[MENGIRIM DAN MENERIMA LOKASI
+
+
+
+
+
+
+
+
+
+
+
+                         • Gunakan metode ini untuk mengirim titik di peta. Jika berhasil, Pesan yang dikirim akan
+
+                             dikembalikan.
+
+
+
+                         • Method = /sendLocation]]></page><page Index="15"><![CDATA[MENERIMA FILE (< 20 MB)
+
+
+
+
+
+
+
+
+
+
+
+                         • Gunakan metode ini untuk mendapatkan info dasar tentang file dan mempersiapkannya
+
+                             untuk diunduh. Untuk saat ini, bot dapat mengunduh file hingga ukuran 20MB. Jika
+
+
+                             berhasil, objek File dikembalikan. File kemudian dapat diunduh melalui tautan
+
+
+                             https://api.telegram.org/file/bot<token>/<file_path>, di mana <file_path> diambil dari
+
+                             respons. Di jamin link akan valid minimal 1 jam. Saat tautan kedaluwarsa, tautan baru dapat
+
+
+                             diminta dengan memanggil getFile lagi.
+
+
+
+                         • Method = /getFile]]></page><page Index="16"><![CDATA[WEBHOOK UNTUK MEMBUAT BOT MANDIRI
+
+
+
+
+
+
+
+
+
+
+
+                         • Menambahkan parameter ip_address ke metode setWebhook, memungkinkan untuk
+
+                             melewati penyelesaian DNS dan menggunakan alamat IP tetap yang ditentukan untuk
+
+
+                             mengirim permintaan webhook.
+
+
+
+                         • Menambahkan bidang ip_address ke kelas WebhookInfo, yang berisi alamat IP saat ini yang
+
+                             digunakan untuk pembuatan koneksi webhook.
+
+
+
+                         • Menambahkan kemampuan untuk menghapus semua pembaruan yang tertunda saat
+
+
+                             mengubah URL webhook menggunakan parameter drop_pending_updates dalam metode
+
+                             setWebhook dan deleteWebhook.]]></page><page Index="17"><![CDATA[Integrate Your PHP Code With
+
+
+
+
+                                         Telegram Bot API For Beginner
+
+
+
+
+
+
+
+
+                                         SELENGKAPNYA : HTTPS://CORE.TELEGRAM.ORG/BOTS/API]]></page><page Index="18"><![CDATA[Integrate Your PHP Code With
+
+
+
+
+                                         Telegram Bot API For Beginner
+
+
+
+
+
+
+
+
+                                         DEMO]]></page></pages></Search>

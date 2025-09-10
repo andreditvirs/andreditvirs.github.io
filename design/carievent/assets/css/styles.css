@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
+
+:root {
+    --color1: #F8F9FA;
+    --color2: #778da9;
+    --color3: #415a77;
+    --color4: #1b263b;
+    --color5: #0d1b2a;
+    --font-main:'Raleway', sans-serif;
+    --font-main-semi-bold:'Raleway SemiBold', sans-serif;
+}
+
+body{
+    font-family: var(--font-main);
+}
+
+nav{
+    background-color: var(--color1);
+    padding: 0px !important;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.25);
+}
+
+nav ul li a{
+    color: var(--color3) !important;
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+input:focus{
+    border-color: var(--color2) !important;
+    box-shadow: 0 0 4px var(--color2) !important;
+}
+
+hr{
+    border-width: 2px;
+    border-color: var(--color4) !important;
+}
+
+.text-medium{
+    font-weight: 500 !important;
+}
+
+.fb-color{
+    background: #3B5998 !important;
+}
+
+.nav-logo{
+    height: 28px;
+}
+
+.daftar{
+    background-color: var(--color2);
+    padding: 0.9rem 1.5rem;
+}
+
+.daftar a{
+    color: var(--color1) !important;
+}
+
+.card{
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.title-hero{
+    font-size: 54px;
+    font-weight: 800;
+}
+
+.button-hero{
+    background-color: var(--color2);
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 12px;
+}
+
+.tagline{
+    font-size: 16px;
+    color: var(--color3);
+    font-weight: 500;
+}
+
+.middle{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-hero{
+    width: 100%;
+}
+
+.carakerja{
+    margin: 6rem !important;
+}
+
+@media (min-width: 576px){
+}
+
+@media (min-width: 768px){
+    .peserta{
+        padding: 0 2rem !important;
+    }
+}
+
+@media (min-width: 992px){
+    .peserta{
+        padding: 0 5rem !important;
+    }
+}
+
+@media (min-width: 1200px){
+
+}
+
+@media (max-width: 576px){
+    .col-md-6{
+        padding: 0.25rem !important;
+        margin: 0.25rem !important;
+    }
+    .card-body{
+        padding: 1.25rem !important;
+        margin: 1rem !important;
+    }
+    .carakerja{
+        padding: 1.25rem !important;
+        margin: 1rem !important;
+    }
+    .peserta{
+        padding: 1rem 0 !important;
+    }
+    .title-hero{
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 992px){
+
+}
+
+.komentar{
+    border: 1.5px solid var(--color2);
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+.reply-komentar{
+    border: 1.5px solid var(--color2);
+    border-radius: 20px;
+    padding: 0.5rem;
+    width: 75%;
+}
+
+.button-kirim{
+    background-color: var(--color2);
+    border-radius: 12px;
+    color: var(--white);
+}
+
+.user-image{
+    width: 100%;
+}
+
+.border-rounded{
+    border-radius: 12px !important;
+    border-color: var(--color4) !important;
+    border-width: 1.6px;
+}
+
+.bg-3{
+    background-color: var(--color3) !important;
+}
+
+.bg-4{
+    background-color: var(--color4) !important;
+}
+
+.text-12{
+    font-size: 12px !important;
+}
+
+.text-28{
+    font-size: 180% !important;
+}
+
+.text-24{
+    font-size: 140% !important;
+}
+
+.color-3{
+    color: var(--color3) !important;
+}
+
+.card-title-kategori{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: var(--color5) !important;
+    font-family: var(--font-main-semi-bold);
+}
+
+.card-counter-kategori{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: var(--color5) !important;
+}
+
+.small-footer{
+    background-color: var(--color3);
+    padding: 20px 0px;
+    margin: 0;
+}
+
+.small-footer a{
+    color: var(--color1) !important;
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--color1) !important;
+}
+footer p{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+footer a{
+    color: var(--color5) !important;
+    text-decoration: none;
+}
+
+/* File event.html */
+#title-event{
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+.button-hadir{
+    background-color: var(--color2);
+    border-radius: 12px;
+    color: var(--white);
+}
+
+/* File carakerja.html */
+.button-title-carakerja{
+    background-color: var(--color3);
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 14px;
+    width: 100%;
+}
+
+.card-title{
+    color: #000
+}
+
+/* Slider index.html */
+@media (min-width: 768px) {
+/* show 4 items */
+.carousel-inner .active,
+.carousel-inner .active + .carousel-item,
+.carousel-inner .active + .carousel-item + .carousel-item,
+.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+display: block;
+}
+
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+transition: none;
+}
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+position: relative;
+transform: translate3d(0, 0, 0);
+}
+
+.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+position: absolute;
+top: 0;
+right: -25%;
+z-index: -1;
+display: block;
+visibility: visible;
+}
+
+/* left or forward direction */
+.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.carousel-item-next.carousel-item-left + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+position: relative;
+transform: translate3d(-100%, 0, 0);
+visibility: visible;
+}
+
+/* farthest right hidden item must be absolue position for animations */
+.carousel-inner .carousel-item-prev.carousel-item-right {
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+display: block;
+visibility: visible;
+}
+
+/* right or prev direction */
+.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.carousel-item-prev.carousel-item-right + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+position: relative;
+transform: translate3d(100%, 0, 0);
+visibility: visible;
+display: block;
+visibility: visible;
+}
+}

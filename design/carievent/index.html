@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CariEvent - Informasi dan Manajemen Event</title>
+  <link rel="icon" href="./assets/image/icon-web.png">
+
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <a class="navbar-brand" href="#"><img class="nav-logo ml-5 my-3" src="assets/logo/carievent.png"
+        alt="logo carievent"></a>
+    <button class="navbar-toggler m-3" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <form class="form-inline w-50 mx-auto">
+        <input class="form-control w-100" type="text" placeholder="Cari event disini" aria-label="Search">
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active p-3">
+          <a class="nav-link text-center" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item p-3">
+          <a class="nav-link text-center" href="carakerja.html">Cara Kerja</a>
+        </li>
+        <li class="nav-item p-3">
+          <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#masuk">Masuk</a>
+        </li>
+        <li class="nav-item daftar">
+          <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#daftar">Daftar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="card my-5">
+      <div class="card-body ml-5">
+        <div class="row">
+          <div class="col-md-6 pl-5 mt-5">
+            <p class="title-hero">Cari Event Apa Minggu ini?</p>
+            <a class="btn button-hero py-3 px-4" href="#" role="button">Cari Event Online</a>
+            <p class="tagline mt-4">Rekomendasi bagi kalian yang #dirumahaja</p>
+          </div>
+          <div class="col-md-6">
+            <div class="middle">
+              <img class="image-hero" src="assets/image/events-hero.png" alt="ilustrasi event">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mb-5">
+    <div class="row justify-content-between">
+      <div class="col">
+        <h2>Event Terpopuler</h2>
+      </div>
+      <div class="col text-right">
+        <p><a href="#" style="text-decoration: none;">lihat semua</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid">
+        <div id="carousel-event-terpopuler" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner row w-100 mx-auto py-1">
+            <div class="carousel-item col-md-3 active">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-1.png" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Oktober 2021</p>
+                  <a href="./event.html" target="_blank" style="text-decoration: none;">
+                    <h5 class="card-title">SEO Starter Guide</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Surabaya
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-5.png" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">23 Januari 2021</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Introduction To cyber Security</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Surabaya
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-7.jpeg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">21 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Microservice dengan Golang</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Jakarta
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-7.jpeg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">21 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Microservice dengan Golang</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Jakarta
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-1.png" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Oktober 2021</p>
+                  <a href="./event.html" target="_blank" style="text-decoration: none;">
+                    <h5 class="card-title">SEO Starter Guide</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Surabaya
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel-event-terpopuler" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-event-terpopuler" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row justify-content-between">
+      <div class="col">
+        <h2>Dekat Surabaya, Jatim</h2>
+      </div>
+      <div class="col text-right">
+        <p><a href="#" style="text-decoration: none;">lihat semua</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid">
+        <div id="carousel-event-terdekat" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner row w-100 mx-auto py-1">
+            <div class="carousel-item col-md-3 active">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-1.png" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Oktober 2021</p>
+                  <a href="./event.html" target="_blank" style="text-decoration: none;">
+                    <h5 class="card-title">SEO Starter Guide</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Surabaya
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-5.png" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">23 Januari 2021</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Introduction To cyber Security</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Surabaya
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-9.jpeg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">5 Februari 2021</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Nodejs For Beginner</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Surabaya
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-7.jpeg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">21 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Microservice dengan Golang</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Jakarta
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-7.jpeg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">21 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Microservice dengan Golang</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Jakarta
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-8.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">1 Februari 2021</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Flutter For Beginner</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Surabaya
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-3">
+              <div class="card h-100">
+                <img src="assets/image/event-poster/event-poster-6.jpg" class="card-img-top embed-responsive-item"
+                  alt="event image">
+                <div class="card-img-overlay" style="color: white;">
+                  <a href="#">
+                    <i class="fas fa-bookmark fa-3x float-right" style="color: #e0e1dd;"></i>
+                  </a>
+                </div>
+                <div class="card-body" style="position: relative;">
+                  <p class="card-text m-1">27 Desember 2020</p>
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Deep Dive Functional Programming Kotlin</h5>
+                  </a>
+                  <i class="fas fa-map-marker-alt"></i> Bandung
+                </div>
+              </div>
+            </div>
+          </div>
+            <a class="carousel-control-prev" href="#carousel-event-terdekat" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-event-terdekat" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="container mb-5">
+      <div class="row justify-content-between mb-3">
+        <div class="col">
+          <h2>Kategori</h2>
+        </div>
+      </div>
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/petualangan.png" alt="petualangan">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Petualangan</p>
+                  <p class="card-counter-kategori">21 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/teknologi.png" alt="teknologi">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Teknologi</p>
+                  <p class="card-counter-kategori">87 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/keluarga.png" alt="keluarga">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Keluarga</p>
+                  <p class="card-counter-kategori">12 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/kesehatan.png" alt="kesehatan">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Kesehatan</p>
+                  <p class="card-counter-kategori">21 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/olahraga.png" alt="olahraga">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Olahraga</p>
+                  <p class="card-counter-kategori">21 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/fotografi.png" alt="fotografi">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Fotografi</p>
+                  <p class="card-counter-kategori">21 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/kuliner.png" alt="kuliner">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Kuliner</p>
+                  <p class="card-counter-kategori">21 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/kesenian.png" alt="kesenian">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Kesenian</p>
+                  <p class="card-counter-kategori">87 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/musik.png" alt="musik">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Musik</p>
+                  <p class="card-counter-kategori">12 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/musik.png" alt="musik">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Musik</p>
+                  <p class="card-counter-kategori">12 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/musik.png" alt="musik">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Musik</p>
+                  <p class="card-counter-kategori">12 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-body py-1 px-4">
+              <div class="row">
+                <div class="col-sm-4 p-0">
+                  <img class="img-fluid" src="assets/image/kategori/musik.png" alt="musik">
+                </div>
+                <div class="col-sm-8 my-auto h-100">
+                  <p class="card-title-kategori">Musik</p>
+                  <p class="card-counter-kategori">12 Event</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="cointainer p-5">
+      <div class="row w-100">
+        <div class="col-md-4 p-4">
+          <div class="row pb-4">
+            <div class="col-sm-8">
+              <img src="./assets/image/carievent.png" alt="" class="img-fluid">
+            </div>
+          </div>
+          <p><a href="">Masuk</a></p>
+          <p><a href="">Daftar</a></p>
+        </div>
+        <div class="col-md-4 p-4">
+          <h4 class="pb-2"><b>Temukan</b></h4>
+          <p><a href="">Topik</a></p>
+          <p><a href="">Kota</a></p>
+          <p><a href="">Bantuan</a></p>
+        </div>
+        <div class="col-md-4 p-4">
+          <div class="row pb-4 px-auto">
+            <div class="col-sm-4 px-0">
+              <img src="./assets/image/getinplaystore.png" alt="" width="140px" class="img-fluid">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 px-0">
+              <img src="./assets/image/getinappstore.png" alt="" width="140px" class="img-fluid">
+            </div>
+          </div>
+          <div class="row">
+            <h4 class="pb-2 w-100"><b>Ikuti Kami</b></h4>
+            <div class="row w-100 px-4">
+              <img src="./assets/image/fb.png" alt="" width="15%" class="img-fluid">
+              <img src="./assets/image/ig.png" alt="" width="15%" class="img-fluid mx-2">
+              <img src="./assets/image/tw.png" alt="" width="15%" class="img-fluid mx-2">
+              <img src="./assets/image/yb.png" alt="" width="15%" class="img-fluid mx-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section>
+    <div class="row w-100 small-footer">
+      <div class="col-md-6 text-center">
+        <a href=""><b>@2020</b> carievent.id</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="">Aturan Pelayanan</a>
+          </div>
+          <div class="col-md-3">
+            <a href="">Kebijakan Privasi</a>
+          </div>
+          <div class="col-md-3">
+            <a href="">Kebijakan Cookie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade text-center" id="masuk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header mt-2" style="border: none;">
+          <h3 class="modal-title col text-center ml-5 p-0" id="exampleModalLongTitle"
+            style="font-weight: 500; color: #0d1b2a;">Masuk</h3>
+          <button type="button" class="close col-sm-2 p-0" data-dismiss="modal" aria-label="Close">
+            <div class="mx-auto" style="padding-top: 35%;">
+              <i class="fas fa-times fa-1x" style="color:  #778da9;"></i>
+            </div>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="mx-5">
+            <div class="form-row">
+              <input type="email" class="form-control" placeholder="Alamat Email">
+            </div>
+            <div class="form-row mt-2">
+              <input type="password" class="form-control" placeholder="Kata Sandi">
+            </div>
+            <button type="submit" class="btn bg-4 w-100 text-white text-medium mt-4">MASUK</button>
+          </form>
+        </div>
+        <div class="row px-4 ml-3">
+            <div class="col-5">
+              <hr style="border-width: 1px;">
+            </div>
+            <span>Atau</span>
+            <div class="col-5">
+              <hr style="border-width: 1px;">
+            </div>
+          </div>
+          <div class="modal-footer px-5 mb-4" style="border: none;">
+            <button type="button" class="btn fb-color w-100 text-white text-medium">
+              <img src="assets/logo/facebook.png" style="width: 6%">
+              Masuk dengan Facebook
+            </button>
+            <button type="button" class="btn btn-outline-dark w-100 text-medium">
+              <img src="assets/logo/google.png" style="width: 4%" class="mx-2">
+              Masuk dengan Google
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade text-center" id="daftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header mt-2" style="border: none;">
+          <h3 class="modal-title col text-center ml-5 p-0" id="exampleModalLongTitle"
+            style="font-weight: 500; color: #0d1b2a;">Daftar</h3>
+          <button type="button" class="close col-sm-2 p-0" data-dismiss="modal" aria-label="Close">
+            <div class="mx-auto" style="padding-top: 35%;">
+              <i class="fas fa-times fa-1x" style="color:  #778da9;"></i>
+            </div>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="mx-5">
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="Nama Anda">
+            </div>
+            <div class="form-row mt-2">
+              <input type="email" class="form-control" placeholder="Alamat Email">
+            </div>
+            <div class="form-row mt-2">
+              <input type="password" class="form-control" placeholder="Kata Sandi">
+            </div>
+            <div class="form-row mt-2">
+              <i class="fas fa-map-marker-alt mr-1"></i>Surabaya, Jatim
+              <a href=#>&nbsp;(Ubah)</a>
+            </div>
+            <div class="form-row text-left mt-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="agreementCheck">
+                <label class="form-check-label pb-2" for="agreementCheck" style="font-size: 14px;">Saya setuju dengan syarat dan ketentuan yang berlaku</label>
+              </div>
+            </div>
+            <button type="button" class="btn bg-4 w-100 text-white text-medium">DAFTAR</button>
+          </form>
+        </div>
+          <div class="row px-4 ml-3">
+            <div class="col-5">
+              <hr style="border-width: 1px;">
+            </div>
+            <span>Atau</span>
+            <div class="col-5">
+              <hr style="border-width: 1px;">
+            </div>
+          </div>
+          <div class="modal-footer px-5 mb-4" style="border: none;">
+            <button type="button" class="btn fb-color w-100 text-white text-medium">
+              <img src="assets/logo/facebook.png" style="width: 6%">
+              Daftar dengan Facebook
+            </button>
+            <button type="button" class="btn btn-outline-dark w-100 text-medium">
+              <img src="assets/logo/google.png" style="width: 4%" class="mx-2">
+              Daftar dengan Google
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- HAL BARU -->
+</body>
+<script>
+  $(document).ready(function() {
+  $("#carousel-event-terpopuler").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $(".carousel-item").length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+  $("#carousel-event-terdekat").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $(".carousel-item").length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+});
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</html>

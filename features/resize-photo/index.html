@@ -1,0 +1,23 @@
+<!-- # Create an Image Resizer with JavaScript & HTML5 Canvas
+
+A Pen created on CodePen.io. Original URL: [https://codepen.io/dcode-software/pen/porebKK](https://codepen.io/dcode-software/pen/porebKK).
+
+Taken from my YouTube Video tutorial:
+https://youtu.be/T7huigh9BNQ
+
+In today's video I'll be showing you how to build an image resizer using JavaScript. This project requires no external libraries like jQuery, Vue, React etc - it is done using vanilla JavaScript only.
+
+This solution uses HTML5 Canvas to draw an image based on the width and height provided by the user input fields. -->
+<div class="resizer">
+  <input type="file" class="resizer__file">
+  <div class="dimensions">
+    <input type="text" class="resizer__input resizer__input--width" value="0">
+    x
+    <input type="text" class="resizer__input resizer__input--height" value="0">
+    <label>
+      <input type="checkbox" class="resizer__aspect" checked>
+      Keep Aspect Ratio
+    </label>
+  </div>
+  <canvas class="resizer__canvas" width="500" height="500"></canvas>
+</div>
